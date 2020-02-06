@@ -2,6 +2,44 @@
 @import "fonts";
 @import "typography";
 
-body {
-  background: $c-gray;
+.rangeWrapper {
+  width: 500px;
+  height: 25px;
+  margin: auto;
+  margin-top: 100px;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+.rangeLine {
+  width: 100%;
+  height: 100%;
+  background-color: #e9e9e9;
+}
+
+.leftSquare,
+.rightSquare {
+  min-width: 31px;
+  height: 31px;
+  background-color: #f6f6f6;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  transform: translateY(-4px);
+}
+
+.leftSquare {
+  position: relative;
+  margin-left: 31px;
+}
+
+.leftSquare:hover,
+.rightSquare:hover {
+  cursor: pointer;
+}
+
+.inputWrapper {
+  width: 200px;
 }
